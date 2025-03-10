@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Background */
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url("IMG_20250125_151938.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.007);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    color: rgb(9, 240, 9);
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(9, 240, 9);
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger-menu {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    margin-top: 80px;
+}
+
+.srch {
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgb(9, 240, 9);
+    color: white;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: rgb(9, 240, 9);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.content .par {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.cn {
+    width: 160px;
+    height: 40px;
+    background: rgb(9, 240, 9);
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hide normal nav, show hamburger menu */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Adjust content */
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .srch {
+        width: 200px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .srch {
+        width: 180px;
+    }
+}
+

@@ -1,0 +1,70 @@
+@import url("style.css");
+
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1b1a1a;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:rgb(9, 240, 9);
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 10px;
+    border-color:rgb(9, 240, 9);
+
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(9, 240, 9);
+}
+
+.contact-form button {
+    background-color: rgb(9, 240, 9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: white;
+    color: rgb(9, 240, 9);
+    border: 2px solid rgb(9, 240, 9);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}

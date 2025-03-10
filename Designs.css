@@ -1,0 +1,35 @@
+@import url("style.css");
+
+.designs {
+    text-align: center;
+    padding: 50px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px green;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 32px;
+    color: limegreen;
+}
+body{
+    background-color: black;
+}
